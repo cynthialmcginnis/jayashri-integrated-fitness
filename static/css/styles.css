@@ -1,5 +1,93 @@
+/* Base styles */
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #333333;
+  --background-color: #f4f4f4;
+  --text-color: #333333;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Custom element styles */
+workout-plan, trainer-profile, nutrition-tracker {
+  display: block;
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+workout-plan h3, trainer-profile h3, nutrition-tracker h3 {
+  color: var(--primary-color);
+}
+
+trainer-profile img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
 }
